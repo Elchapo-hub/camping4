@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","tertiary-container":"#063d20","background":"#f9f9ff","on-secondary-fixed":"#321200","secondary-fixed":"#ffdbc9","surface-variant":"#d9e3f9","on-tertiary":"#ffffff","primary-container":"#1b3b2b","tertiary":"#002510","surface-container-low":"#f0f3ff","error-container":"#ffdad6","surface-dim":"#d0daf0","inverse-primary":"#abcfb8","on-surface":"#121c2c","on-tertiary-container":"#75a983","surface-container-lowest":"#ffffff","on-surface-variant":"#424843","on-primary-fixed-variant":"#2d4d3c","outline":"#727973","on-primary-container":"#83a590","on-tertiary-fixed-variant":"#1e5031","on-error-container":"#93000a","on-error":"#ffffff","error":"#ba1a1a","secondary-fixed-dim":"#ffb68c","secondary-container":"#fc934f","tertiary-fixed":"#b9efc5","surface-tint":"#456553","surface-container":"#e7eeff","outline-variant":"#c1c8c2","surface-container-high":"#dee8ff","surface-container-highest":"#d9e3f9","on-primary":"#ffffff","on-secondary-container":"#6d3000","on-secondary-fixed-variant":"#753400","secondary":"#994703","on-primary-fixed":"#002113","inverse-on-surface":"#ebf1ff","primary":"#032517","tertiary-fixed-dim":"#9dd3aa","inverse-surface":"#273141","primary-fixed-dim":"#abcfb8","surface-bright":"#f9f9ff","on-tertiary-fixed":"#00210e","primary-fixed":"#c7ebd4","on-background":"#121c2c","surface":"#f9f9ff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2.5rem","space-md":"1rem",margin:"3rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-lg":"1.5rem",gutter:"1.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem"},fontFamily:{"label-sm":["Space Grotesk"],"display-hero-mobile":["Epilogue"],"headline-lg-mobile":["Epilogue"],"body-xl":["Manrope"],"headline-md":["Epilogue"],"body-md":["Manrope"],"display-hero":["Epilogue"],"headline-lg":["Epilogue"],"headline-sm":["Epilogue"],"body-sm":["Manrope"],"headline-xl":["Epilogue"],"body-lg":["Manrope"],"label-lg":["Space Grotesk"],"label-md":["Space Grotesk"],"headline-xl-mobile":["Epilogue"]},fontSize:{"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-xl":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0.01em",fontWeight:"400"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.015em",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.04em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"600"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(15,35,26,0.06)]"><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Wilderlust Expeditions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W-ryB4p6ql-STChsvVWqknSymV2kB0BAEJzD804PlvwTm8LZmJpJ19GILiOc0c9AZLBjGmR3kK9VckCw4EWoe4uIoosQX2NZwf726VOMTD-wpD-1LBZkPXeiDIXmh_f8Piog3LEndMuq4aX__pjbqvoRQJfCazfpQNXwdXa1na0oEVfAxE0AjzzCyTpRmM46KtvfNsj_ksKYoyWRg1PQh_MaXHn4lNxEeQGmFYQmwDOa0LGb1Kdv13Spim"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary whitespace-nowrap hidden sm:inline">Wilderlust</span></a><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="home" href="#">Home</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="expeditions-and-tours" href="#">Expeditions &amp; Tours</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="tour-details-and-itinerary" href="#">Tour Details &amp; Itinerary</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="campsites-and-gear" href="#">Campsites &amp; Gear</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="about-and-guides" href="#">About &amp; Guides</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="journal" href="#">Journal</a></nav></div><div class="flex items-center gap-space-sm"><button aria-label="Search expeditions" class="p-2 text-on-surface-variant hover:text-on-surface transition-colors rounded-lg flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Saved Trips" class="relative p-2 text-on-surface-variant hover:text-on-surface transition-colors rounded-lg flex items-center justify-center" data-path="saved-trips" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[9px]">3</span></a><a class="hidden sm:inline-flex items-center justify-center bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container px-space-md py-2.5 rounded-lg font-label-md text-label-md uppercase tracking-wider transition-all shadow-sm" data-path="book-an-expedition" href="#"><span class="material-symbols-outlined text-[18px] mr-1.5">explore</span>Book an Expedition</a><div class="flex items-center pl-1 sm:pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4RBJdmcpqmedhFUi6PqZkcrWwlVo97Prb52O5uyVtE5strjySisjm0IDv3CDmg6tklYYy3U5WvcB_1UxqKQcxyk_RUYu0WbnPYmwQjlYl_-bVXtPCYQmgZaiAV9Z2uIuogeIwMsbUQNNNf5BLQxB6cWCDuqGe6UWFkGI0hHsrTbtHDto5TqyYD15ec4oV2jLwff_0p-Lpc_ISZY6gGBgOcGO8QUFrdEpUA4HG5lF1ZWHrlwQGZXwL5g"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION WITH KEN BURNS EFFECT -->
+<section class="relative w-full overflow-hidden bg-primary -mt-20 pt-20">
+<div class="relative h-[85vh] min-h-[640px] max-h-[820px] w-full flex items-end justify-center pb-12 sm:pb-16 overflow-hidden">
+<!-- Ken Burns Background Layer -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-[18000ms] ease-out hover:scale-105 scale-100" data-alt="Golden dawn over Mount Kilimanjaro with snow-capped volcanic summit looming above the vast golden African savannah. Luxury safari safari canvas tents are pitched along a winding wooden boardwalk with warm lantern glow and distant zebras in soft morning fog." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMGjl7OYw-ni7OEECtubQTKz7ReSqlaQKzbYADtRoOO6_nSRuk9l4q8ohuhrphrB5JbS5I8G1P5cjdx4wdzyq5gazYNyMUr0Dffwc6aQnoTlTxU5blUxPpSO8_MRtfVkuUELqXkqT0hZRpTLqLakrGVHNJVqiRn_tOM9oAPf5ewSHH0z5ghnivDXQNfgds7sUrzU7kVsE8_4vXUbp5ElA9w2DmU2zHKDngrovjZR-Ayi6J4NOFxdgiTA'); animation: pulseZoom 26s infinite alternate ease-in-out;"></div>
+<!-- Scrim Gradients for Visual Contrast & Theme Integration -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/20 pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-transparent to-primary/40 pointer-events-none"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full max-w-[1360px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-6 text-on-primary">
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest shadow-md">
+<span class="material-symbols-outlined text-[14px]">flag</span> Tanzania Expeditions 2025/2026
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[15px]">terrain</span> Kilimanjaro Summit • Serengeti Bush Camps • Crater Treks
+          </span>
+</div>
+<div class="max-w-3xl space-y-4">
+<h1 class="font-display-hero text-display-hero text-on-primary tracking-tight leading-tight">
+            From Africa’s Highest Roof to the Untamed Serengeti
+          </h1>
+<p class="font-body-xl text-body-xl text-primary-fixed max-w-2xl leading-relaxed">
+            High-altitude alpine ascents combined with raw, authentic bush camps under the Southern Cross. Supported by master Chagga &amp; Maasai lead guides, certified wilderness medicine, and ethical KPAP-partnered porter crews.
+          </p>
+</div>
+<!-- Quick Proof Metrics Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 pt-2 max-w-4xl">
+<div class="bg-primary-container/85 backdrop-blur-md p-3.5 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-3xl">verified</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-primary leading-none">98.4%</div>
+<div class="font-label-sm text-label-sm uppercase text-on-primary-container mt-1">Lemosho Summit Rate</div>
+</div>
+</div>
+<div class="bg-primary-container/85 backdrop-blur-md p-3.5 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-3xl">shield_person</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-primary leading-none">KINAPA</div>
+<div class="font-label-sm text-label-sm uppercase text-on-primary-container mt-1">Chief Certified Guides</div>
+</div>
+</div>
+<div class="bg-primary-container/85 backdrop-blur-md p-3.5 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-3xl">volunteer_activism</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-primary leading-none">100% KPAP</div>
+<div class="font-label-sm text-label-sm uppercase text-on-primary-container mt-1">Porter Fair Care Standard</div>
+</div>
+</div>
+<div class="bg-primary-container/85 backdrop-blur-md p-3.5 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-3xl">flare</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-primary leading-none">Class 1</div>
+<div class="font-label-sm text-label-sm uppercase text-on-primary-container mt-1">Dark Sky Bush Reserves</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Field Expeditions Booking Bar (Negative offset floating card) -->
+<div class="relative z-20 max-w-[1360px] mx-auto px-margin-mobile lg:px-margin -mt-8 mb-12">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-xl flex flex-col lg:flex-row gap-5 items-stretch lg:items-center justify-between">
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-4">
+<!-- Route selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">route</span> Route / Expedition
+            </label>
+<select class="w-full bg-surface-container-low px-3.5 py-3 rounded-lg font-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all">
+<option value="lemosho">Kilimanjaro Lemosho (8 Days)</option>
+<option value="machame">Kilimanjaro Machame (7 Days)</option>
+<option value="ngorongoro">Ngorongoro Caldera Rim (5 Days)</option>
+<option value="serengeti">Serengeti Deep Bush Walking (6 Days)</option>
+<option value="combo">The Ultimate Summit &amp; Safari (14 Days)</option>
+</select>
+</div>
+<!-- Season / Departure -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span> Target Season
+            </label>
+<select class="w-full bg-surface-container-low px-3.5 py-3 rounded-lg font-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all">
+<option>Dry Season (Jul - Oct 2025)</option>
+<option>Full Moon Summit (Sep 2025)</option>
+<option>Calving Season (Jan - Mar 2026)</option>
+<option>Dry Alpine Window (Dec 2025)</option>
+</select>
+</div>
+<!-- Group / Private -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">group</span> Trekkers &amp; Style
+            </label>
+<select class="w-full bg-surface-container-low px-3.5 py-3 rounded-lg font-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all">
+<option>Small Group (4-8 Trekkers)</option>
+<option>Solo Alpine Explorer</option>
+<option>Private Bespoke Expedition</option>
+<option>Corporate / Scientific Team</option>
+</select>
+</div>
+</div>
+<div class="flex items-end">
+<button class="w-full lg:w-auto h-[50px] px-8 bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container rounded-lg font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+            Check Dates &amp; Permits
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ICONIC TANZANIA JOURNEYS & TOURS GRID -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile lg:px-margin py-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold flex items-center gap-2">
+<span class="w-6 h-[2px] bg-secondary inline-block"></span> Field Catalog
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+          Signature East African Wilderness Expeditions
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Each itinerary integrates dedicated medical checkpoints, field chefs preparing nutrient-dense mountain meals, and authentic safari camp hospitality.
+      </p>
+</div>
+<!-- Tours Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Kilimanjaro Lemosho -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Expedition camp on the high Shira Plateau of Mount Kilimanjaro under crisp blue sky with dramatic glaciated peak of Kibo in the background, yellow and orange alpine tents, rocky volcanic terrain and alpine heather." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACdBY49qSyPqZwUeeT9HiVxt4IEXhQtC0TiFjn5CYCv2gqiSiBquno3eUB_2grSTlwnFCV1-X1fz4BD0USMEXN25imOnf5KqVJeNQe54LuHgWBbrBCP1QtL9AkPH4Li0QSKdUfiRjNqxA4X-RGiIhsY8orNflvq-lyvv26R8ow79MklRPqIKzpyx9G8N6ez7lRa4xA1JjOQi_p28Jeuqev5aCsNaWkPs7u-RaAngsyVH4VwSfcWhedEA')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider shadow">
+              High Summit Success (98.4%)
+            </span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg text-primary font-label-md text-label-md font-bold shadow">
+            From $2,490 <span class="text-on-surface-variant font-normal">/ trekker</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-6">
+<div class="space-y-3">
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">schedule</span> 8 Days / 7 Nights</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span> 19,341 ft Summit</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+              Kilimanjaro Lemosho Route: Glacial Ridge Traverse
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+              Approaching from the pristine western rain forest to the Shira caldera, crossing the rugged Lava Tower for optimal acclimatization before tackling the Western Breach glaciers.
+            </p>
+</div>
+<div class="space-y-4 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6">
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Pulse Oximetry 2x Daily</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">High-Altitude Hyperbaric Bag</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Private Walk-in Mess Tent</span>
+</div>
+<button class="w-full py-3 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+              View Lemosho Itinerary <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Ngorongoro Crater Rim & Highlands Trek -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Hikers walking in single file along the dramatic lush green ridge of Ngorongoro Crater in Tanzania with morning fog rolling through deep volcanic caldera, distant alkaline lake visible in morning light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAib_NIncwM7gCuUHzA-SO21EJSQjAjvKgmRdZIK19CRDsw19PSGURlEGpgGszfffobKyOFyzw96VLVTscUu6zBMAIxaBGCi7GoL_G51onfJxfxIrf9dO_tzvr27rxCHqHIN5YYlgThu6eeZHLz2bv-LEoVWCaws9ethH7wezdRatv6vaptV6SqiUzbN1gu1Nvdl6VXtDkqUraL6qAmn1BK4rZuTCtuCzvD-nBHLOV6I-czKcJMYWz9uQ')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider shadow">
+              Highland Backpacking
+            </span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg text-primary font-label-md text-label-md font-bold shadow">
+            From $1,650 <span class="text-on-surface-variant font-normal">/ trekker</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-6">
+<div class="space-y-3">
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">schedule</span> 5 Days / 4 Nights</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">landscape</span> Caldera Rim &amp; Maasai Land</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+              Ngorongoro Caldera Rim &amp; Olmoti Crater Ridge
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+              Traverse the cloud-misted ridge walls, sacred volcanic calderas of Empakaai, and descend to Lake Natron. Guided by armed Tanzania wildlife rangers and Maasai track-masters.
+            </p>
+</div>
+<div class="space-y-4 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6">
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Armed Ranger Escort</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Traditional Boma Homestay</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Backcountry Tents</span>
+</div>
+<button class="w-full py-3 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+              View Crater Itinerary <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Serengeti Deep Bush & Stargazing Camp -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Expedition safari tents under the dazzling Milky Way galactic arc in the Serengeti wilderness at night, glowing campfire with warm embers, glowing lanterns hanging from acacia branches and silhouettes of wilderness explorers stargazing." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFqD6x6Ca-_Va-b_QUwvH0oHdHJ1uP38M3qJiVapuvljZUb5R5ZiSHcnmDFk3O5zilcpaRLAA4bFxLcOGA5-D3rSYNdKeEKN4wC_5rmDZvNt-Pdwyj90lircMyTAUltm34ca5TZ0ZM0PVHgSk6K1LWGCGo2rnXe-upvvBK8o5Cd61eDdJhnqnNNnYiAa5rB4v11bP5G0iPwe8LixrjgKM_k1Y5efeF5_esPIC_3XeS3C7sHjfeeVsWig')"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider shadow">
+              Wilderness Walking Safari
+            </span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg text-primary font-label-md text-label-md font-bold shadow">
+            From $2,180 <span class="text-on-surface-variant font-normal">/ trekker</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-6">
+<div class="space-y-3">
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">schedule</span> 6 Days / 5 Nights</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">hotel_class</span> Class 1 Dark Skies</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+              Serengeti Deep Bush &amp; Southern Cross Camp
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+              Immerse yourself beyond the tourist vehicle tracks in mobile wilderness outposts. Foot-based tracking of the Great Migration, acoustic night-sky sessions, and open campfire storytelling.
+            </p>
+</div>
+<div class="space-y-4 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6">
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Bush Hot Showers</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Telescope Stargazing Kit</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm">Swahili Campfire Dining</span>
+</div>
+<button class="w-full py-3 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+              View Bush Camp Details <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SIGNATURE TANZANIA CAMP LIFE & GASTRONOMY -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Visual mosaic -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+<div class="w-full h-full bg-cover bg-center" data-alt="Luxury safari camp dining tent in the African bush at dusk, long timber table set with candle lanterns, safari chairs, warm yellow lighting and expedition chefs serving fresh roasted vegetables and local dishes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDflVIEtgUG_1GOs30dBlNwaxkdEc5bEVQEB9EBnw7l1xJ-n7_OIeA6fHc_2V1gcEuPdiyz9eA__u6s1ZS13yIzIZ4I5M6DHiWNh5mu_WWc2fbvTScwFuJSxAwGSOAdv0ebujob0xTxSb7gE3wvoFfp1xfD38Nf7FoD4jb29p5Lmhf_RalCLS99T0ZP_qfzua0K2xdk6gUjhKG-rdJFwZb8ixuh7_yMLo6OrosDhrEWcly34tmL_HYHaw')"></div>
+</div>
+<!-- Overlapping badge box -->
+<div class="absolute -bottom-8 -right-4 sm:right-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl max-w-xs flex flex-col gap-2">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[24px]">restaurant</span>
+<span class="font-label-md text-label-md uppercase font-bold">Basecamp Gastronomy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              High-calorie, freshly prepped nutrient-dense trail meals: Tanzanian butternut squash soup, slow-braised beef stew, avocado chapati wraps, and piping hot ginger chai on mountain ridges.
+            </p>
+</div>
+</div>
+<!-- Editorial Description -->
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold flex items-center gap-2">
+<span class="w-6 h-[2px] bg-secondary inline-block"></span> Wilderness Hospitality
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Not Merely Surviving the Backcountry—Thriving in It
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Whether pitched at 15,000 feet on the wind-whipped rock of Barafu or situated among ancient acacia thorn trees in the central Serengeti, our mobile camps represent the pinnacle of ethical wilderness field logistics.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">water_drop</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Hot Bucket Showers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Enjoy heated bush shower bags hoisted each evening after dusty game drives or intense ridge ascents.
+                </p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">solar_power</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Solar Power Stations</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Recharge DSLRs, drones, mirrorless cameras, and GPS watches at dedicated mess tent solar inverters.
+                </p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">security</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Armed Ranger Escorts</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Full authorization and licensed TANAPA wildlife conservation rangers accompany all walking safari operations.
+                </p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Milky Way Campfires</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Debrief the day’s high-altitude telemetry or wildlife spoor tracking around a crackling wood fire.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KILIMANJARO ELEVATION PROFILE & ACCLIMATIZATION TELEMETRY -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile lg:px-margin py-20">
+<div class="bg-primary text-on-primary rounded-2xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+<!-- Decorative ambient gradient ring -->
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-10">
+<div>
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-widest">
+            Scientific Acclimatization
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary tracking-tight mt-3">
+            The Lemosho Route Elevation Profile
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed max-w-xl mt-2">
+            Why Wilderlust maintains a 98.4% summit success: our signature "Climb High, Sleep Low" progression allows gradual blood oxygen saturation before tackling the midnight summit push to Uhuru Peak (19,341 ft).
+          </p>
+</div>
+<div class="flex items-center gap-6 bg-primary-container/60 p-4 rounded-xl backdrop-blur-sm self-start lg:self-auto">
+<div>
+<div class="font-label-sm text-label-sm uppercase text-on-primary-container">Total Elevation Gain</div>
+<div class="font-headline-md text-headline-md text-secondary-container font-bold">+11,599 ft</div>
+</div>
+<div class="w-[1px] h-10 bg-outline/30"></div>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-on-primary-container">Optimum Acclimatization</div>
+<div class="font-headline-md text-headline-md text-primary-fixed font-bold">8 Full Days</div>
+</div>
+</div>
+</div>
+<!-- Technical SVG Elevation Graph -->
+<div class="relative z-10 w-full bg-primary-container/40 p-6 rounded-xl border border-transparent">
+<div class="w-full overflow-x-auto pb-4">
+<div class="min-w-[760px]">
+<!-- Responsive SVG line chart -->
+<svg class="w-full h-56 overflow-visible" fill="none" viewbox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="elevationGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#fc934f" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#1b3b2b" stop-opacity="0.05"></stop>
+</lineargradient>
+</defs>
+<!-- Grid reference lines -->
+<line stroke="#727973" stroke-dasharray="4 4" stroke-opacity="0.3" x1="50" x2="780" y1="30" y2="30"></line>
+<text class="font-label-sm text-[10px]" fill="#83a590" x="15" y="34">19,341 ft</text>
+<line stroke="#727973" stroke-dasharray="4 4" stroke-opacity="0.3" x1="50" x2="780" y1="90" y2="90"></line>
+<text class="font-label-sm text-[10px]" fill="#83a590" x="15" y="94">15,190 ft</text>
+<line stroke="#727973" stroke-dasharray="4 4" stroke-opacity="0.3" x1="50" x2="780" y1="150" y2="150"></line>
+<text class="font-label-sm text-[10px]" fill="#83a590" x="15" y="154">12,600 ft</text>
+<line stroke="#727973" stroke-dasharray="4 4" stroke-opacity="0.3" x1="50" x2="780" y1="210" y2="210"></line>
+<text class="font-label-sm text-[10px]" fill="#83a590" x="15" y="214">7,742 ft</text>
+<!-- Elevation Polygon -->
+<polygon fill="url(#elevationGrad)" points="60,210 160,165 270,145 380,88 470,140 560,125 650,85 730,30 780,190 780,220 60,220"></polygon>
+<!-- Elevation Path Line -->
+<polyline points="60,210 160,165 270,145 380,88 470,140 560,125 650,85 730,30 780,190" stroke="#fc934f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></polyline>
+<!-- Waypoint Data Dots & Labels -->
+<!-- Day 1: Londorossi -->
+<circle cx="60" cy="210" fill="#ffffff" r="4" stroke="#fc934f" stroke-width="2"></circle>
+<text class="font-label-sm text-[9px] uppercase" fill="#abcfb8" x="45" y="235">Londorossi (7,742')</text>
+<!-- Day 2: Shira 1 -->
+<circle cx="160" cy="165" fill="#ffffff" r="4" stroke="#fc934f" stroke-width="2"></circle>
+<text class="font-label-sm text-[9px] uppercase" fill="#abcfb8" x="135" y="185">Shira 1 (11,500')</text>
+<!-- Day 3: Shira 2 -->
+<circle cx="270" cy="145" fill="#ffffff" r="4" stroke="#fc934f" stroke-width="2"></circle>
+<text class="font-label-sm text-[9px] uppercase" fill="#abcfb8" x="245" y="135">Shira 2 (12,600')</text>
+<!-- Day 4: Lava Tower Acclimatization spike -->
+<circle cx="380" cy="88" fill="#994703" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<text class="font-label-sm text-[10px] font-bold uppercase" fill="#fc934f" x="345" y="75">Lava Tower (15,190')</text>
+<!-- Day 4 Night: Barranco (Sleep Low) -->
+<circle cx="470" cy="140" fill="#ffffff" r="5" stroke="#fc934f" stroke-width="2"></circle>
+<text class="font-label-sm text-[9px] uppercase" fill="#abcfb8" x="440" y="160">Barranco Camp (13,044')</text>
+<!-- Day 5: Karanga -->
+<circle cx="560" cy="125" fill="#ffffff" r="4" stroke="#fc934f" stroke-width="2"></circle>
+<text class="font-label-sm text-[9px] uppercase" fill="#abcfb8" x="535" y="115">Karanga (13,106')</text>
+<!-- Day 6: Barafu Base -->
+<circle cx="650" cy="85" fill="#ffffff" r="5" stroke="#fc934f" stroke-width="2"></circle>
+<text class="font-label-sm text-[9px] uppercase" fill="#abcfb8" x="625" y="70">Barafu (15,331')</text>
+<!-- Day 7: Uhuru Summit -->
+<circle cx="730" cy="30" fill="#fc934f" r="7" stroke="#ffffff" stroke-width="2"></circle>
+<text class="font-label-sm text-[11px] font-bold uppercase" fill="#ffffff" x="680" y="20">Uhuru Peak (19,341')</text>
+</svg>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex flex-wrap items-center justify-between gap-4 text-primary-fixed font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="inline-block w-3 h-3 rounded-full bg-secondary-container"></span>
+<span>Critical Acclimatization Point: Day 4 climb to Lava Tower triggers vital red blood cell generation before resting low at Barranco.</span>
+</div>
+<div class="flex items-center gap-2 text-on-primary-container">
+<span class="material-symbols-outlined text-[18px]">ecg_heart</span>
+<span>Full O2 &amp; Gamow Hyperbaric Chamber on every expedition</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LEAD GUIDES, PORTER WELFARE & KPAP CERTIFICATION -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile lg:px-margin py-12">
+<div class="bg-surface-container rounded-2xl p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Guide Image & Badges -->
+<div class="lg:col-span-5 flex flex-col items-center sm:items-start gap-4">
+<div class="relative w-full max-w-sm aspect-square rounded-2xl overflow-hidden shadow-lg">
+<img alt="Chief Expedition Guide Juma Mollel smiling warmly in high-altitude outdoor gear" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Uizypfm8TVTT43rCt72bciPCY6apiDykVum_dsyirPfJoIX-_JZENdKeu2hUnqx2dzz5pmimsMIL_-qgZaqT1aptyccHjPkv3FmKfKPd2BJWGXmOZiCA2S1baK2jAVOP6bcKZXpRcRZ80TOCtrQojTcsnVqPINHO5wM6sDylJQzb-YCWt9NWhbKlhdM4G0r2wFoI0_DDMNYIm-ZAmxnjgWduAAKvp1u0SwNnt-pYSvHM15Sx8RXT6jQJiZ"/>
+<div class="absolute bottom-4 left-4 right-4 bg-primary/85 backdrop-blur-md p-3.5 rounded-xl text-on-primary flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm leading-tight">Juma Mollel</div>
+<div class="font-label-sm text-label-sm uppercase text-secondary-container">Lead Expedition Guide • 150+ Summits</div>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-3xl">verified</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 bg-surface-container-lowest text-on-surface rounded-lg font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span> WFR Certified
+          </span>
+<span class="px-3 py-1.5 bg-surface-container-lowest text-on-surface rounded-lg font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">translate</span> Fluent Swahili &amp; English
+          </span>
+<span class="px-3 py-1.5 bg-surface-container-lowest text-on-surface rounded-lg font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology</span> Leave No Trace Master
+          </span>
+</div>
+</div>
+<!-- Porter Welfare & Ethical Manifesto -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold flex items-center gap-2">
+<span class="w-6 h-[2px] bg-secondary inline-block"></span> Ethical High-Altitude Operations
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          The Mountain Belongs to the Porters Who Carry Us
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          We are proud, certified partners of the <strong>KPAP (Kilimanjaro Porters Assistance Project)</strong>. Wilderlust guarantees transparent tip disbursement, strict 20kg pack weight limits, comprehensive mountain medical coverage, three nutritious hot meals daily, and proper cold-weather sleeping gear for all Tanzanian crew members.
+        </p>
+<!-- Guarantee Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-start gap-3 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">scale</span>
+<div>
+<div class="font-label-md text-label-md uppercase font-bold text-on-surface">Strict 20kg Scale Audits</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Every bag weighed at park trailheads to avoid overload injury.</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-start gap-3 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">payments</span>
+<div>
+<div class="font-label-md text-label-md uppercase font-bold text-on-surface">35% Above Minimum Wage</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Direct bank deposit eliminates predatory middleman deductions.</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-start gap-3 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">bed</span>
+<div>
+<div class="font-label-md text-label-md uppercase font-bold text-on-surface">Four-Season Sleeping Systems</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Heavy thermal mats, insulated tents, and alpine clothing standard.</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-start gap-3 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">clinical_notes</span>
+<div>
+<div class="font-label-md text-label-md uppercase font-bold text-on-surface">Free Health Checks &amp; Evac</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Identical medical protocols and air rescue coverage as guests.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ARUSHA BASECAMP GEAR RENTAL & PACKING PROTOCOL -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile lg:px-margin py-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold flex items-center gap-2">
+<span class="w-6 h-[2px] bg-secondary inline-block"></span> Field Readiness
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+          Arusha Gear Rental &amp; Summit Essentials
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Don’t buy expensive alpine mountaineering gear you may only use once. Wilderlust maintains a premium gear locker at our Arusha Basecamp, sanitized and pre-inspected.
+      </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">downhill_skiing</span>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container px-2.5 py-1 rounded text-on-surface">$45 / Trek</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">800-Fill Arctic Down Parka</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Rated to -20°C for midnight Uhuru Peak summit winds. North Face &amp; Mountain Hardwear.</p>
+</div>
+<div class="font-label-sm text-label-sm uppercase text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Pre-cleaned &amp; Inspected
+        </div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">hiking</span>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container px-2.5 py-1 rounded text-on-surface">$25 / Trek</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Black Diamond Trekking Poles</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">FlickLock carbon fiber poles indispensable for the steep scree descent from Barafu.</p>
+</div>
+<div class="font-label-sm text-label-sm uppercase text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Snow &amp; Rock Baskets
+        </div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">bedtime</span>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container px-2.5 py-1 rounded text-on-surface">$40 / Trek</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">-25°C Down Sleeping System</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Hydrophobic goose down with thermal compression sack and fresh liner included.</p>
+</div>
+<div class="font-label-sm text-label-sm uppercase text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Ozone Sanitized
+        </div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">luggage</span>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container px-2.5 py-1 rounded text-on-surface">$20 / Trek</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">90L Waterproof Porter Duffel</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Heavy-duty TPU laminated stormproof duffel built to withstand porter transit.</p>
+</div>
+<div class="font-label-sm text-label-sm uppercase text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 100% Water-Sealed
+        </div>
+</div>
+</div>
+</section>
+<!-- READY TO SUMMIT CTA BANNER -->
+<section class="w-full bg-primary text-on-primary py-20 relative overflow-hidden">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+<div class="max-w-2xl space-y-4 text-center lg:text-left">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest">
+          Permits Filling Quickly For 2025/2026
+        </span>
+<h2 class="font-display-hero text-display-hero-mobile sm:text-display-hero text-on-primary tracking-tight leading-tight">
+          Answer the Call of Kilimanjaro &amp; the Wild Plains
+        </h2>
+<p class="font-body-xl text-body-xl text-primary-fixed max-w-xl">
+          National park permits are limited per route each dry season. Connect with our expedition planners to lock in dates, acclimatization profiles, and private bush camp locations.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container rounded-lg font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-lg">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+          Schedule Guide Consultation
+        </button>
+<button class="w-full sm:w-auto px-8 py-4 bg-primary-container hover:bg-primary-container/80 text-on-primary rounded-lg font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[20px]">download</span>
+          Download 2025 Field Guide (PDF)
+        </button>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg shadow-[0_-1px_12px_rgba(15,35,26,0.03)]"><div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs"><img alt="Wilderlust Expeditions Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W-ryB4p6ql-STChsvVWqknSymV2kB0BAEJzD804PlvwTm8LZmJpJ19GILiOc0c9AZLBjGmR3kK9VckCw4EWoe4uIoosQX2NZwf726VOMTD-wpD-1LBZkPXeiDIXmh_f8Piog3LEndMuq4aX__pjbqvoRQJfCazfpQNXwdXa1na0oEVfAxE0AjzzCyTpRmM46KtvfNsj_ksKYoyWRg1PQh_MaXHn4lNxEeQGmFYQmwDOa0LGb1Kdv13Spim"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">Wilderlust Expeditions</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-sm">Handcrafted backcountry journeys, alpine ascents, and responsible wilderness expeditions. Engineered for modern explorers seeking the raw precision of the outdoors.</p><div class="flex flex-wrap items-center gap-space-sm pt-space-xs"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-[16px]">eco</span>1% For The Planet</div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-[16px]">nature_people</span>Leave No Trace</div></div></div><div class="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-space-md"><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold mb-1">Expeditions</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="expeditions-and-tours" href="#">All Trails &amp; Peaks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="tour-details-and-itinerary" href="#">Route Itineraries</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="expeditions-and-tours" href="#">Alpine Ascents</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="expeditions-and-tours" href="#">Backcountry Pack</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold mb-1">Field Ops</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="campsites-and-gear" href="#">Campsite Directory</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="campsites-and-gear" href="#">Rental Gear Guide</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="about-and-guides" href="#">Wilderness Permits</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="safety-and-sos" href="#">Satellite SOS Network</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold mb-1">Collective</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="about-and-guides" href="#">Mountain Guides</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="journal" href="#">Field Journal</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="safety-and-sos" href="#">Emergency Contact</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="saved-trips" href="#">Saved Itineraries</a></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Trail Dispatches</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive route status bulletins, seasonal weather warnings, and expedition openings directly from base camp.</p><form class="flex flex-col gap-space-xs mt-1" onsubmit="return false;"><div class="flex rounded-lg overflow-hidden bg-surface shadow-sm"><input class="w-full px-3 py-2 text-body-sm font-body-sm bg-transparent text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="Enter your base email..." type="email"/><button aria-label="Subscribe" class="bg-primary text-on-primary px-3 flex items-center justify-center hover:bg-primary-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><span class="font-label-sm text-[10px] text-on-surface-variant">Strictly field bulletins. Unsubscribe whenever.</span></form><div class="mt-space-xs p-3 rounded-lg bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary">radar</span><div><div class="font-label-sm text-label-sm uppercase text-on-surface">Alpine Radar Active</div><div class="font-body-sm text-[11px] text-on-surface-variant">North Cascades: Clear / 42°F</div></div></div><span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface">© 2024 Wilderlust Expeditions.</span><span>Designed by ZephaXcodes</span><span>Leave No Trace Certified</span></div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Permit Compliance</a><a class="hover:text-on-surface transition-colors flex items-center gap-1" data-path="safety-and-sos" href="#"><span class="material-symbols-outlined text-[14px] text-secondary">satellite_alt</span>Satellite SOS Status</a></div></div></div></footer></body></html>
